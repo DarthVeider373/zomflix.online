@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video</title>
+
+  <!--S-->
+
+  <script>
+    window.googlePixelId = "69da489b3af41c482b232dbf";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel-google.js");
+    document.head.appendChild(a);
+  </script>
+
+
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttonUrl = document.querySelectorAll("a[href]");
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (!urlParams.toString()) return;
+        buttonUrl.forEach((a) => {
+          const originalUrl = new URL(a.href);
+          if (
+            ["mailto:", "tel:", "javascript:"].some((p) =>
+              a.href.startsWith(p)
+            )
+          )
+            return;
+          if (originalUrl) {
+            urlParams.forEach((value, key) => {
+              if (!originalUrl.searchParams.has(key)) {
+                originalUrl.searchParams.set(key, value);
+              }
+            });
+            a.href = originalUrl.toString();
+          }
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    });
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(180deg, #1a001f, #0b000f);
+      color: #fff;
+      text-align: center;
+    }
+
+    .container {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .check {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(145deg, #ff004c, #ff2e63);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      box-shadow: 0 0 25px rgba(255, 0, 76, 0.7);
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: 28px;
+      max-width: 700px;
+      line-height: 1.4;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: linear-gradient(90deg, #ff004c, #ff2e63);
+      color: #fff;
+      padding: 18px 45px;
+      font-size: 18px;
+      border-radius: 40px;
+      text-decoration: none;
+      box-shadow: 0 0 20px rgba(255, 0, 76, 0.8);
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 35px rgba(255, 0, 76, 1);
+    }
+
+    .footer {
+      background: #070009;
+      color: #aaa;
+      padding: 30px 20px;
+      font-size: 13px;
+    }
+
+    .footer-container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-left {
+      max-width: 600px;
+    }
+
+    .footer-left p {
+      margin: 5px 0;
+    }
+
+    .footer-right {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-right a {
+      color: #ff2e63;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .footer-warning {
+      margin-top: 25px;
+      border-top: 1px solid #1a001f;
+      padding-top: 15px;
+      font-size: 12px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-box {
+      background: #120014;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 600px;
+      width: 90%;
+      color: #ddd;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .modal-header {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #ff2e63;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .close {
+      cursor: pointer;
+      font-size: 22px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      .footer-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="check">✓</div>
+
+    <h1>
+      Haz clic en el botón de abajo para ver la presentación GRATIS.
+    </h1>
+
+    <a href="../foIlowthelittlejoys" class="btn">VER AHORA →</a>
+
+  </div>
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <div class="footer-left">
+        <p><strong>SOCIEDADE DE EDUCACAO, CULTURA E TECNOLOGIA SAO FIDELIS LTDA</strong></p>
+        <p>CNPJ: 58.215.068/0001-78</p>
+        <p>Rua Santa Barbara 15 Sala 03 Sala 04 Sala 05 Sala 06 Sala 07</p>
+        <p>Santa Barbara, Criciúma - SC, 88804-280</p>
+        <p>Email: suporte@fidelisltda.com | Teléfono: (47) 3032-6195</p>
+      </div>
+
+      <div class="footer-right">
+        <a onclick="openModal('terms')">Términos y Condiciones</a>
+        <a onclick="openModal('privacy')">Política de Privacidad</a>
+        <a onclick="openModal('contact')">Contacto</a>
+      </div>
+
+    </div>
+
+    <div class="footer-warning">
+      <p>Este sitio no forma parte de YouTube ni de Google.</p>
+      <p>Contenido protegido por derechos de autor.</p>
+      <p>Los resultados no están garantizados.</p>
+    </div>
+
+  </footer>
+
+  <div id="privacy" class="modal">
+    <div class="modal-box">
+      <div class="modal-header">Política de Privacidad <span class="close" onclick="closeModal('privacy')">×</span></div>
+      <p>Esta política describe cómo se utilizan tus datos en este sitio.</p>
+    </div>
+  </div>
+
+  <div id="terms" class="modal">
+    <div class="modal-box">
+      <div class="modal-header">Términos de Uso <span class="close" onclick="closeModal('terms')">×</span></div>
+      <p>Al acceder a este sitio, aceptas los términos establecidos.</p>
+    </div>
+  </div>
+
+  <div id="contact" class="modal">
+    <div class="modal-box">
+      <div class="modal-header">Contacto <span class="close" onclick="closeModal('contact')">×</span></div>
+      <p>Email: suporte@fidelisltda.com</p>
+      <p>Teléfono: (47) 3032-6195</p>
+    </div>
+  </div>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'flex';
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = 'none';
+    }
+
+    window.onclick = function (e) {
+      document.querySelectorAll('.modal').forEach(m => {
+        if (e.target === m) m.style.display = 'none';
+      });
+    }
+  </script>
+
+</body>
+
+</html>
